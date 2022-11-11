@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+	<style>
+		aside {
+		  width: 30%;
+		  padding-left: 15px;
+		  margin-left: 15px;
+		  float: right;
+		  font-style: italic;
+		  background-color: lightgray;
+		}
+		</style>
+      <title>HTML Frames</title>
+   </head>
+	
+   <frameset rows = "20%,80%" border="0">
+			<frameset cols="100%">
+      			<frame scrolling="no" name = "top" src = "heading.html"/>
+			</frameset>
+			<frameset cols="80%,20%">
+				<frame scrolling="no" name = "middle" src = "header.png"/>
+				<frame scrolling="no" name = "middle" src = "Mission&Vission.html"/>
+			</frameset>
+			</frameset>
+  <noframes>
+         <body>Your browser does not support frames.</body>
+      </noframes>
+   </frameset> 
+</html>
+
+      

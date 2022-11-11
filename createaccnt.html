@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Forgot password</title>
+<style>
+body
+{
+background-image:url("bgimg.png");
+background-repeat:no-repeat;
+background-size:cover;
+}
+form.f
+{
+width: 300px;
+height:150px;
+}
+table.transbox {
+margin: 10px;
+width: 300px;
+height:500px;
+background-color: #ffffff;
+border-radius: 15px; 
+opacity: 0.6;
+}
+</style>
+</head>
+<body>
+<center><h3 style="color:Green;">Create Your Account</h3>
+<form style="color:Green;" class="f">
+<table class="transbox">
+<tr>
+	<td><label for="fname">Firstname</label>
+	<input type="text" id="fname"  placeholder="Firstname"></td>
+	<td><label for="mname">Middlename</label>
+	<input type="text" id="mname" placeholder="Middlename"></td>
+	<td><label for="lname">Lastname</label>
+	<input type="text" id="lname" placeholder="Lastname"></td>
+</tr>
+<tr><td><h5>Gender:</h5></td></tr>
+<tr><td><label>Male</label><input type="radio" name="gender" value="male" /></td>
+<td><label>Female</label><input type="radio" name="gender" value="female" /></td>
+</tr>
+<br><br>
+<tr>
+<td><label for="dob">Date of Birth</label>
+<input type="date" id="dob" placeholder="DateofBirth"></td>
+</tr>
+<br><br><br>
+<tr>
+<td><label for="mail">email</label>
+<input type="email" id="mail" placeholder="@gmail.com">
+</td>
+</tr>
+<br><br><br>
+<tr>
+<td><label for="pass">Password</label>
+<input type="text" id="pass" placeholder="characters,min=8,max=13, pattern="[A-Za-z]{10}"></td>
+</tr>
+<br><br><br>
+<tr><td><label for="pass">Confirm Password</label>
+<input type="password" id="pass"></td>
+</tr>
+<td><input type="checkbox" id="confirm" name="confirm" value="con">
+ <label for="=confirm"> I accept the terms and conditions.</label></td>
+</tr>
+<br><br><br>
+<tr>
+<td>
+<input type="reset" class="button" onclick="" ></input>
+<input type="submit"  class="button" onclick="" ></input>
+</td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>

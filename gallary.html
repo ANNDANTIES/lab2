@@ -1,0 +1,54 @@
+<html>
+<head><style>
+h1{
+background-color:white;
+color:pink;
+font-family:verdana;
+}
+body{
+background-color: powderblue;
+color:gray;
+font-family:verdana;
+font-size:100%;
+padding: 10px 0;
+}
+p{
+margin:50px;
+}
+a:link {color: green;
+  background-color: transparent;
+  text-decoration: none;}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<h1>Gallary</h1>
+<p style="text-align:center;">
+  <img  src="campus.png" alt="Campus" usemap="#workmap" width="370" height="280">
+<map name="workmap">
+  <area shape="rect" coords="0,0,270,350" alt= "Bangalore Campus" href="centralcam.html">
+</map>
+<img id="campus" src="ncc.jpg" alt="Campus" usemap="#workmap" width="370" height="280">
+  <canvas id="myCanvas" width="370" height="280" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML canvas tag.</canvas>
+    <p><button onclick="myCanvas()">next</button></p>
+
+    <script>
+    function myCanvas() {
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      var img = document.getElementById("campus");
+      ctx.drawImage(img,10,10);
+    }
+  </script>
+</p>
+</body>
+</html>
